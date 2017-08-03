@@ -1,0 +1,27 @@
+
+/* For mobile phones: */
+.container{
+  max-width: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .container{
+    max-width: 768px;
+  }
+}
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,2 +1,1 @@
-# wedding
-Wedding Invitation
+# Nam and Hyejin's Wedding

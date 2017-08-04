@@ -1,13 +1,87 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Nam & Hyejin's Wedding</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css">
   <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
   <div class="container">
-    <img class="teaser" src="./img/sample.jpg">
+    <div class="row">
+      <img class="teaser" src="./img/teaser.png">
+    </div>
+    <div class="row">
+
+      <p>
+        <span class="secondary">결혼합니다</span>
+
+        <hr class="divider"></hr>
+
+        <strong>2017년 8월 26일 토요일 3시 30분</strong>
+        <br>
+        <strong>더채플 앳 웨스트</strong>
+
+        <hr class="divider"></hr>
+        <br>
+        <span class="secondary">오셔서 축하해주세요</span>
+        <br>
+        <br> 김성호 • 정성자 의 차남 남 욱
+        <br> 임학빈 • 이혜경 의 장녀 혜 진
+        <br>
+        <br> 서로가 서로에게
+        <br> 먼저 좋은 사람이 되고
+      </p>
+      <p>
+        채워주고 배워가며
+        <br> 둘이어서 더 나은 우리가 되겠습니다.
+        <br>
+        <br> 김남욱 ♥ 임혜진
+        <!-- <br> -->
+        <!-- <br> <span class="secondary"> 화환은 축하의 마음으로 대신하겠습니다 </span> -->
+      </p>
+    </div>
+    <div class="row">
+      <div id="image-list">
+        <div class="image-container" v-for="image in images">
+          <img class="image-thumbnail" v-bind:src="image" v-on:click='showImage(image)'>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <br>
+      <div class="secondary">오시는 길</div>
+      <br>
+      <strong>더채플 앳 웨스트</strong>
+      <br>
+      <br> 서울시 강서구 양천로 476번지 (등촌동 73-1)
+      <br> 02-2692-1121
+      <br>
+      <br>
+      <a target="_blank" href="http://naver.me/5hxTg2Vi">네이버 지도 보기 ></a>
+    </div>
+    <div class="row">
+      <div class="google-maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12651.179164063647!2d126.84540269006158!3d37.5598982854593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9c0947f16ac3%3A0x100e55808a43799e!2z642U7LGE7ZSM7JWz7Juo7Iqk7Yq4!5e0!3m2!1sen!2s!4v1501839976263" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+
   </div>
+  <!-- The Modal -->
+  <div id="popup" v-on:click="close($event)">
+    <span id="popup-close" v-on:click="close($event)">&times;</span>
+    <img id="popup-content">
+  </div>
+
+  <script src="https://unpkg.com/vue"></script>
+  <script  src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="index.js"></script>
 </body>
+
 </html>

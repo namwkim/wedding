@@ -16,7 +16,9 @@ window.onload = function(){
 }
 
 function showImage(image){
+  console.log('show image', image);
   document.getElementById('popup').style.display = 'block';
+  document.getElementById('popup').style.pointerEvents = 'auto';
   document.getElementById('popup').classList.remove('animated', 'fadeOut');
   document.getElementById('popup').classList.add('animated', 'fadeIn');
   // document.getElementById('popup-content').classList.add('animated', 'flipInX');
@@ -28,6 +30,7 @@ function closePopup(event){
   if (event.target===event.currentTarget){
     document.getElementById('popup').classList.remove('animated', 'fadeIn');
     document.getElementById('popup').classList.add('animated', 'fadeOut');
+    document.getElementById('popup').style.pointerEvents = 'none';
     // document.getElementById('popup').style.display='none';
     // document.getElementById('popup-content').classList.remove('animated', 'flipInX');
     document.body.style.overflow = '';

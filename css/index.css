@@ -1,6 +1,6 @@
 @import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
-
+/*@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 body{
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@ body{
   font-size: 1.2em;
   line-height: 1.8;
   color: #616161;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 a{
   text-decoration: none;
@@ -110,7 +110,7 @@ a:visited {
 }
 
 #popup {
-    display: none; 
+    display: none;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 50px; /* Location of the box */

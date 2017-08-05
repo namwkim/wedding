@@ -9,21 +9,22 @@
   <meta property="og:image" content="https://namwkim.github.io/wedding/img/teaser.png"/>
   <meta property="og:title" content="남욱 ♥ 혜진 결혼식에 초대합니다."/>
   <meta property="og:description" content="2017년 8월 26일 토요일 3시 30분 더채플 앳 웨스트"/>
-  <link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css">
-  <link rel="stylesheet" href="./index.css">
+  <!-- <link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css"> -->
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/animate.min.css">
 </head>
 
 <body>
   <div class="container">
     <div class="row">
       <div class='teaser-container'>
-        <img class="teaser" src="./img/teaser.png">
-        <div class='bride'>
+        <img class="teaser-image" src="./img/teaser.png">
+        <div class='teaser-text bride'>
           임<br>
           혜<br>
           진
         </div>
-        <div class='groom'>
+        <div class='teaser-text groom'>
           김<br>
           남<br>
           욱
@@ -44,8 +45,8 @@
         <br>
         <span class="secondary">오셔서 축하해주세요</span>
         <br>
-        <br> 김성호 • 정성자 의 차남 남 욱
-        <br> 임학빈 • 이혜경 의 장녀 혜 진
+        <br> 김성호 • 정성자 의 차남 <strong>남 욱</strong>
+        <br> 임학빈 • 이혜경 의 장녀 <strong>혜 진</strong>
         <br>
         <br> 서로가 서로에게
         <br> 먼저 좋은 사람이 되고
@@ -61,8 +62,34 @@
     </div>
     <div class="row">
       <div id="image-list">
-        <div class="image-container" v-for="image in images">
-          <img class="image-thumbnail" v-bind:src="image" v-on:click='showImage(image)'>
+        <div class="image-container" >
+          <img class="image-thumbnail" src="img/photo1.jpeg" onclick="showImage('img/photo1.jpeg')">
+        </div>
+        <div class="image-container" >
+          <img class="image-thumbnail" src="img/photo2.jpeg" onclick="showImage('img/photo2.jpeg')">
+        </div>
+        <div class="image-container" >
+          <img class="image-thumbnail" src="img/photo3.jpeg" onclick="showImage('img/photo3.jpeg')">
+        </div>
+
+        <div class="image-container" >
+          <img class="image-thumbnail" src="img/photo4.png" onclick="showImage('img/photo4.png')">
+        </div>
+        <div class="image-container" >
+          <img class="image-thumbnail" src="img/photo5.jpeg" onclick="showImage('img/photo5.jpeg')">
+        </div>
+        <div class="image-container" >
+          <img class="image-thumbnail" src="img/photo6.jpeg" onclick="showImage('img/photo6.jpeg')">
+        </div>
+
+        <div class="image-container" >
+          <img class="image-thumbnail" src="img/photo7.jpeg" onclick="showImage('img/photo7.jpeg')">
+        </div>
+        <div class="image-container" >
+          <img class="image-thumbnail" src="img/photo5.jpeg" onclick="showImage('img/photo5.jpeg')">
+        </div>
+        <div class="image-container" >
+          <img class="image-thumbnail" src="img/photo5.jpeg" onclick="showImage('img/photo6.jpeg')">
         </div>
       </div>
     </div>
@@ -86,17 +113,20 @@
 
   </div>
   <!-- The Modal -->
-  <div id="popup" v-on:click="close($event)">
-    <span id="popup-close" v-on:click="close($event)">&times;</span>
-    <img id="popup-content">
+  <div id="popup" onclick="closePopup(event)">
+
+    <div id="popup-content">
+      <div id="popup-close" onclick="closePopup(event)">&times;</div>
+      <img id="popup-image">
+    </div>
   </div>
 
-  <script src="https://unpkg.com/vue"></script>
-  <script  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  <!-- <script src="js/vue.min.js"></script> -->
+  <!-- <script  src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-  <script src="lib/lightbox/js/lightbox.min.js"></script>
-  <script src="index.js"></script>
+    crossorigin="anonymous"></script> -->
+  <!-- <script src="lib/lightbox/js/lightbox.min.js"></script> -->
+  <script src="js/index.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,8 @@
 window.onload = function(){
   //initialize
   // console.log('screen.height', window.innerHeight);
-
+  var tc = document.getElementsByClassName('teaser-container')[0];
+  tc.style.height = window.innerHeight + 'px';
 }
 
 

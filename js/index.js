@@ -13,6 +13,11 @@ window.onload = function(){
   for (var i=0; i<list.length; i++){
       list[i].classList.add('animated', 'fadeInUp');
   }
+
+  var heart = document.getElementById('heart');
+  heart.classList.add('animated', 'infinite', 'bounce');
+
+
 }
 
 function showImage(image){

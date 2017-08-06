@@ -95,6 +95,11 @@ a:visited {
   height: 100%;
   object-fit: cover;
 }
+
+#heart{
+  color: #E91E63;
+  display: inline-block;
+}
 .google-maps {
     position: relative;
     padding-bottom: 75%; // This is the aspect ratio

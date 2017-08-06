@@ -61,7 +61,9 @@ a:visited {
   position: relative;
   opacity: 0.0;
 }
-
+#invitee{
+  display: inline-block;
+}
 .divider{
   border: 0;
   height: 0;

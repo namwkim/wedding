@@ -5,6 +5,9 @@ window.onload = function(){
   tc.style.opacity = 1.0;
   tc.style.height = window.innerHeight + 'px';
 
+  var invitee = document.getElementById('invitee');
+  invitee.innerHTML = gup('invitee');
+  invitee.classList.add('animated', 'tada', 'infinite');
   // add animations
   var ti = document.getElementsByClassName('teaser-image')[0];
   ti.classList.add('animated', 'fadeIn');
@@ -18,6 +21,16 @@ window.onload = function(){
   heart.classList.add('animated', 'infinite', 'bounce');
 
 
+}
+
+function gup(name) {
+	name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+	var regexS = "[\\?&]"+name+"=([^&#]*)";
+	var regex = new RegExp(regexS);
+	var results = regex.exec(window.location.href);
+	if(results == null)
+		return "";
+	else return decodeURIComponent(results[1]);
 }
 
 function showImage(image){

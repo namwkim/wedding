@@ -79,7 +79,7 @@ a:visited {
 
 .primary{
   color: #4d5256;
-  font-size: 1.15em;
+  font-size: 1.2em;
   font-weight: regular;
 }
 
@@ -87,7 +87,7 @@ a:visited {
   color: #a9afb3;
   font-size: 0.95em;
   font-weight: light;
-  margin: 0, 0.5;
+  margin: 0, 0.7;
 }
 
 #image-list{

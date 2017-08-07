@@ -33,6 +33,7 @@ a:visited {
   }
   body{
     font-size: 1.2em;
+    font-weight: light;
   }
 }
 .noto {
@@ -79,11 +80,13 @@ a:visited {
 .primary{
   color: #4d5256;
   font-size: 1.1em;
+  font-weight: regular;
 }
 
 .secondary{
   color: #a9afb3;
   font-size: 0.95em;
+  font-weight: light;
 }
 
 #image-list{

@@ -11,7 +11,7 @@ body{
   font-size: 1.1em;
   line-height: 1.8;
   color: #616161;
-  font-family: 'Noto Sans', 'Sans-serif';
+  font-family: 'Noto Sans Korean', sans-serif;
   font-weight: 100;
 /*   font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; */
 }
@@ -79,7 +79,7 @@ a:visited {
 }
 
 .primary{
-  font-family: 'Noto Sans', Sans-serif;
+  font-family: 'Noto Sans Korean', sans-serif;
   color: #4d5256;
   font-size: 1.1em;
   font-weight: 400;

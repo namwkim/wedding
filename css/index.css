@@ -11,8 +11,8 @@ body{
   font-size: 1.1em;
   line-height: 1.8;
   color: #616161;
-  font-family: 'Noto Sans KR', 'Sans-serif';
-  font-weight: 300;
+  font-family: 'Noto Sans', 'Sans-serif';
+  font-weight: 100;
 /*   font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; */
 }
 a{

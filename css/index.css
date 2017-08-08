@@ -10,7 +10,7 @@ body{
   /*font-family: 'Nanum Myeongjo', serif;*/
   font-size: 1.1em;
   line-height: 1.8;
-  color: #616161;
+  color: #878d91;
   font-family: 'Noto Sans Korean', sans-serif;
   font-weight: 100;
 /*   font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; */
@@ -80,14 +80,14 @@ a:visited {
 
 .primary{
   font-family: 'Noto Sans Korean', sans-serif;
-  color: #4d5256;
+  color: #363a3c;
   font-size: 1.1em;
   font-weight: 400;
 }
 
 .secondary{
   font-family: 'KoPub Batang', serif;
-  color: #a9afb3;
+  color: #363a3c;
   font-size: 1.2em;
   font-weight: 200;
   padding-bottom: 15px;

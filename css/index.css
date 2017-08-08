@@ -8,7 +8,7 @@ body{
   margin: 0;
   padding: 0;
   /*font-family: 'Nanum Myeongjo', serif;*/
-  font-size: 0.9em;
+  font-size: 1.1em;
   line-height: 1.8;
   color: #4d5256;
   font-family: 'Noto Sans Korean', sans-serif;
@@ -88,7 +88,7 @@ a:visited {
 .secondary{
   font-family: 'KoPub Batang', serif;
   color: #363a3c;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 200;
   padding-bottom: 15px;
 }

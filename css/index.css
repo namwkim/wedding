@@ -25,7 +25,7 @@ a:visited {
 /* For mobile phones: */
 .container{
   max-width: 100%;
-  width: 76%;
+  width: 100%;
   margin: auto;
   text-align: center;
   /*background-image: url(img/cream-pixels.png);*/
@@ -48,11 +48,11 @@ a:visited {
   font-family: 'KoPub Batang', serif;
 }
 .bride {
-  bottom: 25%;
+  bottom: 28%;
   left: 8%;
 }
 .groom {
-  bottom: 25%;
+  bottom: 28%;
   right:8%;
 }
 

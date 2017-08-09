@@ -16,10 +16,27 @@ window.onload = function(){
   for (var i=0; i<list.length; i++){
       list[i].classList.add('animated', 'fadeInUp');
   }
+  $('#image-detail').slick({
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: false,
+   fade: true,
+   adaptiveHeight: true,
+   asNavFor: '#image-list'
+  });
 
-  var heart = document.getElementById('heart');
-  heart.classList.add('animated', 'infinite', 'bounce');
+  $('#image-list').slick({
+    lazyLoad: 'ondemand',
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '#image-detail',
+    centerMode: true,
+    focusOnSelect: true
 
+  });
 
 }
 
@@ -34,23 +51,13 @@ function gup(name) {
 }
 
 function showImage(image){
-  console.log('show image', image);
-  document.getElementById('popup').style.display = 'block';
-  document.getElementById('popup').style.pointerEvents = 'auto';
-  document.getElementById('popup').classList.remove('animated', 'fadeOut');
-  document.getElementById('popup').classList.add('animated', 'fadeIn');
-  // document.getElementById('popup-content').classList.add('animated', 'flipInX');
-  document.getElementById('popup-image').src = image;
-  document.body.style.overflow = 'hidden';
-}
-
-function closePopup(event){
-  if (event.target===event.currentTarget){
-    document.getElementById('popup').classList.remove('animated', 'fadeIn');
-    document.getElementById('popup').classList.add('animated', 'fadeOut');
-    document.getElementById('popup').style.pointerEvents = 'none';
-    // document.getElementById('popup').style.display='none';
-    // document.getElementById('popup-content').classList.remove('animated', 'flipInX');
-    document.body.style.overflow = '';
-  }
+  document.getElementById('image-detail').src = image;
+  // console.log('show image', image);
+  // document.getElementById('popup').style.display = 'block';
+  // document.getElementById('popup').style.pointerEvents = 'auto';
+  document.getElementById('image-detail').classList.remove('animated', 'fadeIn');
+  document.getElementById('image-detail').classList.add('animated', 'fadeIn');
+  // // document.getElementById('popup-content').classList.add('animated', 'flipInX');
+  // document.getElementById('popup-image').src = image;
+  // document.body.style.overflow = 'hidden';
 }

@@ -70,6 +70,7 @@ a:visited {
 #invitee{
   display: inline-block;
   font-weight: bold;
+  color: #ffc107;
 }
 .divider{
   border: 0;
@@ -117,7 +118,7 @@ a:visited {
 }
 
 #heart{
-  color: #FFD740;
+  color: #ffc107;
   display: inline-block;
 }
 .google-maps {
@@ -135,7 +136,7 @@ a:visited {
 }
 
 .footer{
-  background-color: #FFD740;
+  background-color: #ffc107;
   margin: 0%;
   padding: 2%;
   color: white;

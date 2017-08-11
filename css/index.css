@@ -117,7 +117,7 @@ a:visited {
 }
 
 #heart{
-  color: #f2cec5;
+  color: #FFD740;
   display: inline-block;
 }
 .google-maps {
@@ -135,9 +135,9 @@ a:visited {
 }
 
 .footer{
-  background-color: #f2cec5;
+  background-color: #FFD740;
   margin: 0%;
-  padding: 3%;
+  padding: 2%;
   color: white;
   font-size: 0.8em;
 

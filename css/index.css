@@ -42,11 +42,11 @@ a:visited {
 }
 .bride {
   top: 5%;
-  left: 8%;
+  right: 8%;
 }
 .groom {
   top:5%;
-  right:8%;
+  left:8%;
 }
 
 .teaser-image {
@@ -69,7 +69,6 @@ a:visited {
 }
 #invitee{
   display: inline-block;
-  color: #fff2ce;
   font-weight: bold;
 }
 .divider{
@@ -118,7 +117,7 @@ a:visited {
 }
 
 #heart{
-  color: #fff2ce;
+  color: #f2cec5;
   display: inline-block;
 }
 .google-maps {
@@ -136,7 +135,7 @@ a:visited {
 }
 
 .footer{
-  background-color: #fff2ce;
+  background-color: #f2cec5;
   margin: 0%;
   padding: 3%;
   color: white;

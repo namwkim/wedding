@@ -19,7 +19,7 @@ window.onload = function(){
   $('#image-detail').slick({
    slidesToShow: 1,
    slidesToScroll: 1,
-   arrows: false,
+   arrows: true,
    fade: true,
    adaptiveHeight: true,
    asNavFor: '#image-list'
